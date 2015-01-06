@@ -15,5 +15,15 @@ class TestTagCloud(unittest.TestCase):
         self.assertIsNotNone(TagCloud.ATTRIB_3_NAME)
         self.assertEqual("tag3", TagCloud.ATTRIB_3_NAME)
 
+    def test_commands(self):
+        tagcloud = TagCloud()
+        foo = tagcloud.commands()
+        self.assertIsNotNone(foo)
+        self.assertTrue (isinstance(foo, list))
+        bar = foo[0]
+        bar(None, None, None)
+
+
+
 
 
