@@ -17,4 +17,4 @@ class TagCloud(BeetsPlugin):
     ATTRIB_3_NAME = "tag3"
 
     def commands(self):
-        return [add_tag]
+        return [tagcloud_command]
